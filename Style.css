@@ -1,0 +1,145 @@
+*
+{
+    margin: 0;
+}
+
+p
+{
+    font-family: "Alegreya SC";
+    color: #FFFFFF;
+}
+
+body
+{
+    background-color: #240E4D;
+    height: 100%;
+    margin: 0;
+}
+
+menu
+{
+    /*background-color: #000000;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;*/
+    background-color: #000000;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative; /* <--- ЦЕ ВАЖЛИВО */
+    padding: 0 20px;
+}
+
+#main_panel
+{
+    background-color: #311468;
+    text-align: center;
+    height: 70px;
+    width: 70%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+button.settings
+{
+    position: absolute;   /* Вириваємо з потоку Flexbox */
+    left: 20px;           /* Відступ зліва */
+    top: 50%;             /* Ставимо по центру висоти */
+    transform: translateY(-50%); /* Рівняємо точно по центру вертикалі */
+
+    /* ВІЗУАЛЬНИЙ ВИГЛЯД ("АДЕКВАТНІСТЬ") */
+    width: 47px;          /* Ширина кнопки */
+    height: 47px;         /* Висота кнопки */
+    background-color: #311468; /* Колір (можна взяти такий, як у панелі) */
+    border-radius: 50%;
+    border: none;
+    color: white;         /* Колір тексту/іконки */
+    font-size: 20px;      /* Розмір іконки */
+    cursor: pointer;      /* Курсор-рука при наведенні */
+    display: flex;        /* Щоб іконка була по центру кнопки */
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;     /* Плавна анімація */
+
+}
+
+button.about_us
+{
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 35px;
+    height: 35px;
+    background-color: #888484;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.search
+{
+    position: absolute;
+    top: 15%;
+    left: 270px;
+    width: 445px;
+    height: 43px;
+    border-radius: 40px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    padding-left: 50px;
+    box-sizing: border-box;
+    font-family: "Alegreya SC";
+}
+
+button.search_btn
+{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 20%;
+    left: 18%;
+    border: none;
+    border-radius: 50%;
+    background-color: #888484;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.search:focus::placeholder
+{
+    color: transparent;
+}
+
+button.mainPage_btn
+{
+    position: absolute;
+    top: 28%;
+    background-color: #431A8D;
+    color: white;
+    width: 105px;
+    height: 26px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    left: 50%;
+    font-family: "Alegreya SC";
+    font-size: 16px;
+}
