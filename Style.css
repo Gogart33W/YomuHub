@@ -23,7 +23,7 @@ menu
     display: flex;
     justify-content: center;
     gap: 20px;*/
-    background-color: #000000;
+    background-color: #240E4D;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ menu
     background-color: #311468;
     text-align: center;
     height: 70px;
-    width: 70%;
+    width: 60%;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
 }
@@ -62,13 +62,12 @@ button.settings
     align-items: center;
     justify-content: center;
     transition: 0.3s;     /* Плавна анімація */
-
 }
 
 button.about_us
 {
     position: absolute;
-    left: 80px;
+    left: 100px;
     top: 50%;
     transform: translateY(-50%);
 
@@ -90,7 +89,7 @@ button.about_us
 {
     position: absolute;
     top: 15%;
-    left: 270px;
+    left: 330px;
     width: 445px;
     height: 43px;
     border-radius: 40px;
@@ -108,7 +107,7 @@ button.search_btn
     width: 37px;
     height: 37px;
     top: 20%;
-    left: 18%;
+    left: 22%;
     border: none;
     border-radius: 50%;
     background-color: #888484;
@@ -127,11 +126,11 @@ button.search_btn
 button.mainPage_btn
 {
     position: absolute;
-    top: 28%;
+    top: 25%;
     background-color: #431A8D;
     color: white;
     width: 105px;
-    height: 26px;
+    height: 36px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -139,7 +138,68 @@ button.mainPage_btn
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-    left: 50%;
+    left: 54%;
     font-family: "Alegreya SC";
     font-size: 16px;
+}
+
+button.profile_btn
+{
+    position: absolute;
+    top: 25%;
+    background-color: #431A8D;
+    color: white;
+    width: 105px;
+    height: 36px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    left: 64%;
+    font-family: "Alegreya SC";
+    font-size: 16px;
+}
+
+img.profileDefaultIcon
+{
+    position: absolute;
+    left: 74%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 7px;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+#menu
+{
+    position: absolute;
+    height: 70px;
+    width: 76px;
+    left: 95%;
+    background-color: #311468;
+    border-bottom-left-radius: 50%;
+}
+
+img.menu_icon
+{
+    position: absolute;
+    top: 12%;
+    left: 28%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #311468;
 }
